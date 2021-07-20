@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Anton Ashurek](https://up.htmlacademy.ru/adaptive/23/user/1810375).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Оксанич](https://htmlacademy.ru/profile/oksanych).
 
 ---
 
