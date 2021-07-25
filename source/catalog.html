@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona catalog</title>
+</head>
+<body>
+    <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__image" width="101" height="85" src="#" alt="SEDONA Logo">
+        </div>
+        <nav class="header__nav">
+            <button class="header__nav__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="header__nav__list">
+                <li class="header__nav__elem">
+                    <a class="header__nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="header__nav__elem">
+                    <a class="header__nav__link header__nav__link--active">ФОТО И ВИДЕО</a>
+                </li>
+                <li class="header__nav__elem">
+                    <a class="header__nav__link" href="#">Форма Отзыва</a>
+                </li>
+                <li class="header__nav__elem">
+                    <a class="header__nav__link" href="#">HTML ACADEMY</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__logo">
+            <h2 class="visually-hidden">Седона</h2>
+            <div class="main__logo__sedona"></div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-info">
+                <h3 class="gallery-info__title">Фото и видео</h3>
+                <p class="gallery-info__text">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
+            <ul class="pic-list">
+                <li class="picture-elem picture-elem--main">
+                    <div class="picture-elem__info">
+                        <div>   <!--noname div for spacebetween-->
+                            <h4 class="picture-elem__title">неродные просторы</h4>
+                            <p class="picture-elem__author">Автор фото: Борис</p>
+                        </div>
+                        <div>
+                            <button class="btn-standart picture-elem__like-btn">1350</button> <!--button or span?-->
+                        </div>
+                    </div>
+                    <picture class="picture-elem__picture">
+                       <!--
+                           <source srcset="img/illustration_1.webp" type="image/webp">
+                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
+                       -->
+                    </picture>
+                </li>
+                <li class="picture-elem">
+                    <div class="picture-elem__info">
+                        <div>   <!--noname div for spacebetween-->
+                            <h4 class="picture-elem__title">Местная растительность</h4>
+                            <p class="picture-elem__author">Автор фото: Сергей</p>
+                        </div>
+                        <div>
+                            <button class="btn-standart picture-elem__like-btn">1350</button> <!--button or span?-->
+                        </div>
+                    </div>
+                    <picture class="picture-elem__picture">
+                       <!--
+                           <source srcset="img/illustration_1.webp" type="image/webp">
+                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
+                       -->
+                    </picture>
+                </li>
+                <li class="picture-elem">
+                    <div class="picture-elem__info">
+                        <div>   <!--noname div for spacebetween-->
+                            <h4 class="picture-elem__title">Дорога на север</h4>
+                            <p class="picture-elem__author">Автор фото: Петр</p>
+                        </div>
+                        <div>
+                            <button class="btn-standart picture-elem__like-btn">1350</button> <!--button or span?-->
+                        </div>
+                    </div>
+                    <picture class="picture-elem__picture">
+                       <!--
+                           <source srcset="img/illustration_1.webp" type="image/webp">
+                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
+                       -->
+                    </picture>
+                </li>
+                <li class="picture-elem">
+                    <div class="picture-elem__info">
+                        <div>   <!--noname div for spacebetween-->
+                            <h4 class="picture-elem__title">Мост дьявола</h4>
+                            <p class="picture-elem__author">Автор фото: Антон</p>
+                        </div>
+                        <div>
+                            <button class="btn-standart picture-elem__like-btn">1350</button> <!--button or span?-->
+                        </div>
+                    </div>
+                    <picture class="picture-elem__picture">
+                       <!--
+                           <source srcset="img/illustration_1.webp" type="image/webp">
+                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
+                       -->
+                    </picture>
+                </li>
+            </ul>
+        </section>
+
+        <section class="video-player">
+            <div class="video-player__description">
+                <h4 class="visually-hidden">Видео с города Седона</h4>
+                <p class="video-player__title">Все еще сомневаетесь?</p>
+                <p class="video-player__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
+            </div>
+            <figure class="video-player__video-block">
+                <video class="video-player__video" src="#"></video>
+                <figcaption class="visually-hidden">Видео...</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="map">
+            <h2 class="visually-hidden">Где нас найти?</h2>
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1626986906413!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="contacts">
+            <h2 class="visually-hidden">Наши контакты!</h2>
+            <div class="contacts__hash">
+                <a class="contacts__hash__link" href="#">#visitSEDONA</a>
+            </div>
+            <div class="contacts__list__wrap">
+                <ul class="contacts__list">
+                    <li class="contacts__list__elem">
+                        <a class="contacts__list__link" href="#">Twitter</a>
+                    </li>
+                    <li class="contacts__list__elem">
+                        <a class="contacts__list__link" href="#">Facebook</a>
+                    </li>
+                    <li class="contacts__list__elem">
+                        <a class="contacts__list__link" href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__developed__wrap">
+                <a class="contacts__developed" href="#">Разработано</a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
