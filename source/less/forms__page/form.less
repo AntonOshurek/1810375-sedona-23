@@ -2,15 +2,19 @@
 
 }
 
+.standart-form-block-title-style() {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
 .form-impressions {
 
     border: none;
 
     &__title {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 26px;
-        text-transform: uppercase;
+        .standart-form-block-title-style();
     }
 
     &__label {
@@ -33,10 +37,7 @@
     border: none;
 
     &__title {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 26px;
-        text-transform: uppercase;
+        .standart-form-block-title-style();
     }
 
     &__label {
@@ -74,10 +75,7 @@
     border: none;
 
     &__title {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 26px;
-        text-transform: uppercase;
+        .standart-form-block-title-style();
     }
 
     &__label {
@@ -119,10 +117,7 @@
     border: none;
 
     &__title {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 26px;
-        text-transform: uppercase;
+        .standart-form-block-title-style();
     }
 
     &__label {
@@ -142,11 +137,8 @@
 
     border: none;
 
-    &__legend {
-        font-weight: bold;
-        font-size: 21px;
-        line-height: 26px;
-        text-transform: uppercase;
+    &__title {
+        .standart-form-block-title-style();
     }
 
     &__input {
@@ -180,6 +172,27 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    color: @standart-white;
+
+    &:hover {
+        background-color: @brand-color-hover;
+    }
+
+    &:focus {
+        background-color: @brand-color-hover;
+    }
+
+    &:active {
+        background-color: @brand-color-click;
+
+        .main-search__title {
+            opacity: 0.3;
+        }
+    }
+
+    &:disabled {
+        background-color: @btn-disabled-color;
+    }
 }
 
 .form-necessarily {
