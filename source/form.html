@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="document" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" display="swap">
+    <!--font-family: 'PT Sans', sans-serif;-->
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Sedona Отзывы</title>
 </head>
-<body>
+<body class="body">
     <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
     <header class="header">
-        <div class="header-logo">
-            <img class="header-logo__image" width="101" height="85" src="#" alt="SEDONA Logo">
+        <div class="main-logo">
+            <img class="main-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
         </div>
-        <nav class="header-nav">
-            <button class="header-nav__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="header-nav__list">
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="index.html">Главная</a>
+        <nav class="navigation">
+            <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="navigation__list">
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="index.html">Главная</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link header-nav__link--active">ФОТО И ВИДЕО</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="#">Форма Отзыва</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link navigation__link--current">Форма Отзыва</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="#">HTML ACADEMY</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="#">HTML ACADEMY</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +56,7 @@
 
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
-            <fieldset class="form-impressions">
+            <fieldset class="form-impressions form-fieldset">
                 <legend class="form-impressions__title">Ваше Общее впечатление:</legend>
                 <label class="form-impressions__label">
                     Скорее положительное
@@ -66,20 +75,23 @@
                 </label>
             </fieldset>
 
-            <fieldset class="form-named">
+            <fieldset class="form-named form-fieldset">
                 <legend class="form-named__title">Представьтесь:</legend>
                 <label class="form-named__label">
+                    ИМЯ*:
                     <input class="form-named__input" type="text" placeholder="Петр" pattern="[a-zA-Zа-яА-Я\s]+" title="только буквы!">
                 </label>
                 <label class="form-named__label">
+                    ФАМИЛИЯ*:
                     <input class="form-named__input" type="text" placeholder="Иванов" pattern="[a-zA-Zа-яА-Я\s]+" title="только буквы!">
                 </label>
                 <label class="form-named__label">
+                    Отчество:
                     <input class="form-named__input" type="text" placeholder="Александрович" pattern="[a-zA-Zа-яА-Я\s]+" title="только буквы!">
                 </label>
             </fieldset>
 
-            <fieldset class="form-contackt">
+            <fieldset class="form-contackt form-fieldset">
                 <legend class="form-contackt__title">Контактная информация:</legend>
                 <label class="form-contackt__label">
                     Контактный телефон*:
@@ -93,7 +105,7 @@
                 </label>
             </fieldset>
 
-            <fieldset class="form-visited">
+            <fieldset class="form-visited form-fieldset">
                 <legend class="form-visited__title">посещенные <br>достопримечательности:</legend>
                 <label class="form-visited__label">
                     Мост Дьявола
@@ -117,8 +129,8 @@
                 </label>
             </fieldset>
 
-            <fieldset class="form-message">
-                <legend class="form-message__legend">Опишите свои эмоции:</legend>
+            <fieldset class="form-message form-fieldset">
+                <legend class="form-message__title">Опишите свои эмоции:</legend>
                 <textarea class="form-message__input" name="messege" cols="80" rows="8">Опишите подробно все свои восторги </textarea>
             </fieldset>
             <button class="form-submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -134,24 +146,22 @@
         </section>
         <section class="contacts">
             <h2 class="visually-hidden">Наши контакты!</h2>
-            <div class="contacts-hash">
-                <a class="contacts-hash__link" href="#">#visitSEDONA</a>
+            <div class="contact-hash">
+                <a class="contact-hash__link" href="#">#visitSEDONA</a>
             </div>
-            <div class="contacts-socials">
-                <ul class="socials-list">
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">Twitter</a>
-                    </li>
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">Facebook</a>
-                    </li>
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">Youtube</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts-developed">
-                <a class="contacts-developed__link" href="#">Разработано</a>
+            <ul class="socials-list">
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">Twitter</a>
+                </li>
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">Facebook</a>
+                </li>
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">Youtube</a>
+                </li>
+            </ul>
+            <div class="developed">
+                <a class="developed__link" href="#">Разработано</a>
             </div>
         </section>
     </footer>
