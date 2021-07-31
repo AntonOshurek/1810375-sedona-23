@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="document" lang="ru">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,23 +18,23 @@
 <body class="body">
 
     <header class="header">
-        <div class="header-logo">
-            <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+        <div class="main-logo">
+            <img class="main-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
         </div>
-        <nav class="header-nav">
-            <button class="header-nav__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="header-nav__list">
-                <li class="header-nav__elem">
-                    <a class="header-nav__link header-nav__link--current">Главная</a>
+        <nav class="navigation">
+            <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="navigation__list">
+                <li class="navigation__elem">
+                    <a class="navigation__link navigation__link--current">Главная</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="#">ФОТО И ВИДЕО</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="#">Форма Отзыва</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="form.html">Форма Отзыва</a>
                 </li>
-                <li class="header-nav__elem">
-                    <a class="header-nav__link" href="#">HTML ACADEMY</a>
+                <li class="navigation__elem">
+                    <a class="navigation__link" href="#">HTML ACADEMY</a>
                 </li>
             </ul>
         </nav>
@@ -115,12 +115,11 @@
 
         </section>
 
-        <section class="main-search">
-            <div class="main-search__wrap"> <!--margin: 0 auto;-->
-                <p class="main-search__desc">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-                <p class="main-search__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-               <!--<h2 class="main-search__title"><a class="main__search__title__link" href="#">НАЙТИ гостиницу</a></h2>-->
-                <a class="main-search__title__link"  href="#"><h2 class="main-search__title">НАЙТИ гостиницу</h2></a>
+        <section class="search-hotel">
+            <div class="search-hotel__wrap"> <!--margin: 0 auto;-->
+                <p class="search-hotel__desc">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+                <p class="search-hotel__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <a class="search-hotel__title-link" href="#"><h2 class="search-hotel__title">НАЙТИ гостиницу</h2></a>
             </div>
         </section>
     </main>
@@ -132,24 +131,22 @@
         </section>
         <section class="contacts">
             <h2 class="visually-hidden">Наши контакты!</h2>
-            <div class="contacts-hash">
-                <a class="contacts-hash__link" href="#">#visitSEDONA</a>
+            <div class="contact-hash">
+                <a class="contact-hash__link" href="#">#visitSEDONA</a>
             </div>
-            <div class="contacts-socials">
-                <ul class="socials-list">
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">T</a>
-                    </li>
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">F</a>
-                    </li>
-                    <li class="socials-list__elem">
-                        <a class="socials-list__link" href="#">Y</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts-developed">
-                <a class="contacts-developed__link" href="#">Разработано</a>
+            <ul class="socials-list">
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">T</a>
+                </li>
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">F</a>
+                </li>
+                <li class="socials-list__elem">
+                    <a class="socials-list__link" href="#">Y</a>
+                </li>
+            </ul>
+            <div class="developed">
+                <a class="developed__link" href="#">Разработано</a>
             </div>
         </section>
     </footer>
