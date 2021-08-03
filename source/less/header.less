@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  height: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    height: min-content;
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .header {
+    padding: 16px 76px;
+  }
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
