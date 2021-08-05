@@ -1,0 +1,30 @@
+.gallery-info {
+  padding: 0 20px 20px 20px;
+  border-bottom: 2px solid @btn-disabled-color;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-info {
+    padding: 0 20px 65px 20px;
+    border-bottom: none;
+  }
+}
+
+.gallery-info__title {
+  .default-margin-padd();
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 26px;
+  padding: 0 0 20px 0;
+}
+
+.gallery-info__text {
+  .default-margin-padd();
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: @subtitle-text-color;
+}
