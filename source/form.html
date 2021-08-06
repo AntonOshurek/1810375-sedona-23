@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="document" lang="ru">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,27 +18,29 @@
 <body class="body">
     <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
     <header class="header">
-        <div class="main-logo">
-            <img class="main-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
-        </div>
-        <nav class="navigation">
-            <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="navigation__list">
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="index.html">Главная</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link navigation__link--current">Форма Отзыва</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="#">HTML ACADEMY</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      <div class="header-logo">
+          <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+      </div>
+      <nav class="navigation">
+          <div class="navigation__dropdown-wrap">
+              <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <ul class="navigation__list">
+              <li class="navigation__elem">
+                <a class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__elem">
+                  <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
+              </li>
+              <li class="navigation__elem">
+                <a class="navigation__link navigation__link--current" href="form.html">Форма Отзыва</a>
+              </li>
+              <li class="navigation__elem">
+                  <a class="navigation__link" href="#">HTML ACADEMY</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
 
     <main class="main">
         <section class="main-logo">
@@ -57,7 +59,7 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
             <fieldset class="form-impressions form-fieldset">
-                <legend class="form-impressions__title">Ваше Общее впечатление:</legend>
+                <legend class="form-impressions__title form-title">Ваше Общее впечатление:</legend>
                 <label class="form-impressions__label">
                     Скорее положительное
                     <input class="form-impressions__input" name="form-impressions__input" type="radio">
@@ -76,7 +78,7 @@
             </fieldset>
 
             <fieldset class="form-named form-fieldset">
-                <legend class="form-named__title">Представьтесь:</legend>
+                <legend class="form-named__title form-title">Представьтесь:</legend>
                 <label class="form-named__label">
                     ИМЯ*:
                     <input class="form-named__input" type="text" placeholder="Петр" pattern="[a-zA-Zа-яА-Я\s]+" title="только буквы!">
@@ -92,7 +94,7 @@
             </fieldset>
 
             <fieldset class="form-contackt form-fieldset">
-                <legend class="form-contackt__title">Контактная информация:</legend>
+                <legend class="form-contackt__title form-title">Контактная информация:</legend>
                 <label class="form-contackt__label">
                     Контактный телефон*:
                     <input class="form-contackt__input" type="tel" required placeholder="Введите телефон">
@@ -106,7 +108,7 @@
             </fieldset>
 
             <fieldset class="form-visited form-fieldset">
-                <legend class="form-visited__title">посещенные <br>достопримечательности:</legend>
+                <legend class="form-visited__title form-title">посещенные <br>достопримечательности:</legend>
                 <label class="form-visited__label">
                     Мост Дьявола
                     <input class="form-visited__input" type="checkbox">
@@ -130,40 +132,32 @@
             </fieldset>
 
             <fieldset class="form-message form-fieldset">
-                <legend class="form-message__title">Опишите свои эмоции:</legend>
-                <textarea class="form-message__input" name="messege" cols="80" rows="8">Опишите подробно все свои восторги </textarea>
+                <legend class="form-message__title form-title">Опишите свои эмоции:</legend>
+                <textarea class="form-message__input" name="messege" cols="30" rows="6">Опишите подробно все свои восторги </textarea>
             </fieldset>
-            <button class="form-submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-            <span class="form-necessarily">* — обязательные поля</span>
-        </form>
+            <div class="form-submit--wrap">
+              <button class="form-submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+              <span class="form-necessarily">* — обязательные поля</span>
+            </div>
 
+        </form>
     </main>
 
     <footer class="footer">
-        <section class="map">
-            <h2 class="visually-hidden">Где нас найти?</h2>
-            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1626986906413!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-        <section class="contacts">
-            <h2 class="visually-hidden">Наши контакты!</h2>
-            <div class="contact-hash">
-                <a class="contact-hash__link" href="#">#visitSEDONA</a>
-            </div>
-            <ul class="socials-list">
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Twitter</a>
-                </li>
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Facebook</a>
-                </li>
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Youtube</a>
-                </li>
-            </ul>
-            <div class="developed">
-                <a class="developed__link" href="#">Разработано</a>
-            </div>
-        </section>
+      <h2 class="visually-hidden">Наши контакты!</h2>
+      <a class="footer__hash" href="#">#visitSEDONA</a>
+      <ul class="socials-list">
+        <li class="socials-list__elem">
+          <a class="socials-list__link" href="#">T</a>
+        </li>
+        <li class="socials-list__elem">
+          <a class="socials-list__link" href="#">F</a>
+        </li>
+        <li class="socials-list__elem">
+          <a class="socials-list__link" href="#">Y</a>
+        </li>
+      </ul>
+      <a class="footer__link" href="#">Разработано</a>
     </footer>
 </body>
 </html>
