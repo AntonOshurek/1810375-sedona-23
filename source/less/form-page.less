@@ -9,14 +9,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
+  padding: 0 20px;
 }
 
 /*standart style for all fieldset block*/
 .form-fieldset {
     border: none;
     .default-margin-padd();
-    padding: 20px;
-
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,10 +59,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
+    padding: 20px 60px;
   }
 
-  .form-fieldset {
-    padding: 20px 60px;
+  .form-fieldset:not(:nth-child(n+5)) {
+    border-bottom: none;
   }
 
   .form-impressions {
@@ -72,6 +73,7 @@
   .form-contackt {
     order: 3;
     flex-direction: row;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -104,13 +106,23 @@
   }
 
   .form-submit--wrap {
-    margin: 0 auto;
-    padding: 0 60px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 @media (min-width: @desctop-width) {
+  .form-visited__label {
+    width: auto;
+    text-align: center;
+  }
 
+  .form {
+    padding: 0 120px;
+  }
 }
 
 .form-title {
@@ -216,6 +228,7 @@
 }
 
 .form-message__input {
+    box-sizing: border-box;
     border: none;
     background-color: @input-bg;
     padding: 14px 22px 10px 22px;
@@ -276,9 +289,5 @@
   .form-necessarily {
     display: block;
   }
-}
-
-@media (min-width: @desctop-width) {
-
 }
 
