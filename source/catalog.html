@@ -18,29 +18,31 @@
 <body class="body">
     <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
     <header class="header">
-        <div class="main-logo">
-            <img class="main-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
-        </div>
+      <div class="header-logo">
+        <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+    </div>
         <nav class="navigation">
+          <div class="navigation__dropdown-wrap">
             <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="navigation__list">
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="index.html">Главная</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link navigation__link--current">ФОТО И ВИДЕО</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="form.html">Форма Отзыва</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="#">HTML ACADEMY</a>
-                </li>
-            </ul>
+        </div>
+        <ul class="navigation__list">
+            <li class="navigation__elem">
+                <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__elem">
+                <a class="navigation__link navigation__link--current">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="navigation__elem">
+                <a class="navigation__link" href="form.html">Форма Отзыва</a>
+            </li>
+            <li class="navigation__elem">
+                <a class="navigation__link" href="#">HTML ACADEMY</a>
+            </li>
+        </ul>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main main-container">
         <section class="main-logo">
             <h2 class="visually-hidden">Седона</h2>
             <div class="main-logo__sedona"></div>
@@ -54,39 +56,35 @@
             <ul class="pic-list">
                 <li class="picture-elem picture-elem--main">
                     <div class="picture-elem__info">
-                        <div>   <!--noname div for spacebetween-->
-                            <h4 class="picture-elem__title">неродные просторы</h4>
-                            <p class="picture-elem__author">Автор фото: Борис</p>
-                        </div>
-                        <div>
-                            <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
-                        </div>
+                      <div>   <!--noname div for spacebetween-->
+                          <h4 class="picture-elem__title">неродные просторы</h4>
+                          <p class="picture-elem__author">Автор фото: Борис</p>
+                      </div>
+                      <div>
+                          <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
+                      </div>
                     </div>
-                    <picture class="picture-elem__picture">
-                       <!--
-                           <source srcset="img/illustration_1.webp" type="image/webp">
-                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
-                       -->
+                    <picture>
+                      <!--<source srcset="" type="image/webp">-->
+                      <img class="picture-elem__picture picture-elem__picture--main" src="img/catalog-photo.jpg" width="280" height="280" alt="">
                     </picture>
                 </li>
-                <li class="picture-elem">
+                <li class="picture-elem picture-elem--second">
                     <div class="picture-elem__info">
-                        <div>   <!--noname div for spacebetween-->
-                            <h4 class="picture-elem__title">Местная растительность</h4>
-                            <p class="picture-elem__author">Автор фото: Сергей</p>
-                        </div>
-                        <div>
-                            <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
-                        </div>
+                      <div>   <!--noname div for spacebetween-->
+                          <h4 class="picture-elem__title">Местная растительность</h4>
+                          <p class="picture-elem__author">Автор фото: Сергей</p>
+                      </div>
+                      <div>
+                          <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
+                      </div>
                     </div>
-                    <picture class="picture-elem__picture">
-                       <!--
-                           <source srcset="img/illustration_1.webp" type="image/webp">
-                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
-                       -->
+                    <picture>
+                        <!--<source srcset="img/illustration_1.webp" type="image/webp">-->
+                        <img class="picture-elem__picture picture-elem__picture--second" src="img/catalog-photo.jpg" width="280" height="280" alt="">
                     </picture>
                 </li>
-                <li class="picture-elem">
+                <li class="picture-elem picture-elem--second">
                     <div class="picture-elem__info">
                         <div>   <!--noname div for spacebetween-->
                             <h4 class="picture-elem__title">Дорога на север</h4>
@@ -96,14 +94,12 @@
                             <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
                         </div>
                     </div>
-                    <picture class="picture-elem__picture">
-                       <!--
-                           <source srcset="img/illustration_1.webp" type="image/webp">
-                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
-                       -->
+                    <picture>
+                      <!--<source srcset="img/illustration_1.webp" type="image/webp">-->
+                      <img class="picture-elem__picture picture-elem__picture--second" src="img/catalog-photo.jpg" width="280" height="280" alt="">
                     </picture>
                 </li>
-                <li class="picture-elem">
+                <li class="picture-elem picture-elem--second">
                     <div class="picture-elem__info">
                         <div>   <!--noname div for spacebetween-->
                             <h4 class="picture-elem__title">Мост дьявола</h4>
@@ -113,11 +109,9 @@
                             <button class="picture-elem__like-btn">1350</button> <!--button or span?-->
                         </div>
                     </div>
-                    <picture class="picture-elem__picture">
-                       <!--
-                           <source srcset="img/illustration_1.webp" type="image/webp">
-                        <img src="img/illustration-1.jpg" width="900" height="600" alt="">
-                       -->
+                    <picture>
+                      <!--<source srcset="img/illustration_1.webp" type="image/webp">-->
+                      <img class="picture-elem__picture picture-elem__picture--second" src="img/catalog-photo.jpg" width="280" height="280" alt="">
                     </picture>
                 </li>
             </ul>
@@ -130,37 +124,28 @@
                 <p class="video-player__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
             </div>
             <figure class="video-player__video-block">
-                <video class="video-player__video" src="#"></video>
+                <!--<video class="video-player__video" src="#"></video>-->
+                <iframe class="video-player__video" width="100%" height="201" src="https://www.youtube.com/embed/geud6LvqH7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption class="visually-hidden">Видео...</figcaption>
             </figure>
         </section>
     </main>
 
     <footer class="footer">
-        <section class="map">
-            <h2 class="visually-hidden">Где нас найти?</h2>
-            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1626986906413!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-        <section class="contacts">
-            <h2 class="visually-hidden">Наши контакты!</h2>
-            <div class="contact-hash">
-                <a class="contact-hash__link" href="#">#visitSEDONA</a>
-            </div>
-            <ul class="socials-list">
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Twitter</a>
-                </li>
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Facebook</a>
-                </li>
-                <li class="socials-list__elem">
-                    <a class="socials-list__link" href="#">Youtube</a>
-                </li>
-            </ul>
-            <div class="developed">
-                <a class="developed__link" href="#">Разработано</a>
-            </div>
-        </section>
+      <h2 class="visually-hidden">Наши контакты!</h2>
+      <a class="footer__hash" href="#">#visitSEDONA</a>
+      <ul class="socials-list">
+        <li class="socials-list__elem">
+            <a class="socials-list__link" href="#">T</a>
+        </li>
+        <li class="socials-list__elem">
+            <a class="socials-list__link" href="#">F</a>
+        </li>
+        <li class="socials-list__elem">
+            <a class="socials-list__link" href="#">Y</a>
+        </li>
+      </ul>
+      <a class="footer__link" href="#">Разработано</a>
     </footer>
 
 </body>

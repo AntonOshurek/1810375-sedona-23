@@ -1,0 +1,36 @@
+.forms-title {
+  padding: 36px 8px 16px 8px;
+  border-bottom: 2px solid @btn-disabled-color;
+}
+
+.forms-title__text {
+  .default-margin-padd();
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 26px;
+  margin-bottom: 25px
+}
+
+.forms-title__sub-text {
+  .default-margin-padd();
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: @subtitle-text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .forms-title {
+    padding: 70px 166px 66px 166px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .forms-title {
+    padding: 114px 382px 56px 382px;
+  }
+}
