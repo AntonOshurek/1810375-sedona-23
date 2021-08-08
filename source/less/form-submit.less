@@ -1,0 +1,39 @@
+.form-submit__btn {
+  background-color: @brand-color;
+  border: none;
+  padding: 18px 60px 13px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: @standart-white;
+
+  &:hover,
+  &:focus {
+      background-color: @brand-color-hover;
+
+  }
+
+  &:active {
+      background-color: @brand-color-click;
+      color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+      background-color: @btn-disabled-color;
+  }
+}
+
+.form-submit__necessarily {
+  display: none;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @subtitle-text-color;
+}
+
+@media (min-width: @tablet-width) {
+.form-submit__necessarily {
+  display: block;
+}
+}

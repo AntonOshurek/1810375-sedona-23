@@ -1,8 +1,5 @@
 .picture-elem {
-  border-bottom: 2px solid @btn-disabled-color;
-}
-
-.picture-elem--wrap {
+  //border-bottom: 2px solid @btn-disabled-color;
   display: flex;
   flex-direction: column-reverse;
   padding: 20px 0;
@@ -46,13 +43,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .picture-elem--wrap {
+  .picture-elem {
     .default-margin-padd();
     width: auto;
-  }
-
-  .picture-elem {
-    border-bottom: none;
   }
 
   .picture-elem__info {
@@ -81,7 +74,7 @@
     width: 400px;
   }
 
-  .picture-elem--wrap {
+  .picture-elem {
     position: relative;
   }
 

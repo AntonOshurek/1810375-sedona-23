@@ -1,0 +1,28 @@
+.standart-input {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @subtitle-text-color;
+}
+
+.standart-input__input {
+  padding: 14px 22px 10px 22px;
+  border: none;
+  background-color: @input-bg;
+  border: 4px solid transparent;
+
+  &::placeholder {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      color: @standart-black;
+  }
+
+  &:hover {
+      background-color: @input-hover;
+  }
+  &:focus {
+      background-color: transparent;
+      border: 4px solid #E5E5E5;
+  }
+}
