@@ -1,6 +1,6 @@
 .footer {
   height: min-content;
-  padding: 28px 0 26px 0;
+  padding: 38px 0 26px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,13 +13,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 60px;
+    padding: 36px 60px 36px 45px;
   }
 }
 
 @media (min-width: @desctop-width) {
   .footer {
-    padding: 36px 120px;
+    padding: 36px 120px 36px 109px;
   }
 }
 
@@ -36,7 +36,9 @@
 }
 
 .footer__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -44,4 +46,16 @@
   line-height: 26px;
   color: @standart-black;
   cursor: pointer;
+
+  &:hover path{
+    fill: @brand-color;
+  }
+
+  &:active path {
+    fill: lighten(@standart-black, 70%) ;
+  }
+}
+
+.footer__link-img {
+  margin-left: 13px;
 }

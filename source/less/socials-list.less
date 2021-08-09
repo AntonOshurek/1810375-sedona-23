@@ -19,6 +19,10 @@
   background-color: @brand-color;
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
       &:hover,
       &:focus{
           background-color: @brand-color-hover;
@@ -26,5 +30,9 @@
 
       &:active {
           background-color: @brand-color-click;
+
+          .socials-list__img-path {
+            fill: darken(#fff, 15%);
+          }
       }
 }
