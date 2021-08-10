@@ -17,13 +17,32 @@
   background-color: @brand-color;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 39px 20px;
-}
 
-.banner__lead--main {
-  padding: 55px 20px 39px 20px;
+  &--main {
+    padding: 55px 13px 39px 13px;
+
+    @media (min-width: @tablet-width) {
+      padding: 40px 32px;
+    }
+
+    @media (min-width: @desctop-width) {
+      padding: 47px 52px 57px 42px;
+    }
+  }
+
+  &--medium {
+    padding: 37px 15px;
+
+    @media (min-width: @tablet-width) {
+      padding: 42px 36px;
+    }
+
+    @media (min-width: @desctop-width) {
+      padding: 51px 78px;
+    }
+  }
 }
 
 .banner__title {
@@ -34,6 +53,7 @@
   font-size: 21px;
   line-height: 26px;
   color: @standart-white;
+  padding-bottom: 20px;
 }
 
 .banner__symbol {
@@ -42,6 +62,7 @@
   font-size: 14px;
   line-height: 21px;
   color: @standart-white;
+  padding-bottom: 20px;
 }
 
 .banner__text {
