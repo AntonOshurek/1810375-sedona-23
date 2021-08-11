@@ -4,6 +4,7 @@
 
 const menuBtn = document.querySelector('.navigation__dropdown-btn');
 const menuList = document.querySelector('.navigation__list');
+closeMenu();
 
   menuBtn.addEventListener('click', (e) => {
     e.preventDefault();

@@ -117,6 +117,11 @@
     display: grid;
     grid-template-columns: 153px 153px 1fr 153px 153px;
 
+    &--active {
+      background-color: transparent;
+      color: @standart-black;
+    }
+
     &::after {
       content: '';
       grid-row: 1;
