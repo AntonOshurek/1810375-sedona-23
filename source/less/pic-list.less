@@ -1,25 +1,17 @@
 .pic-list {
   .default-margin-padd();
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 32px;
-}
-
-@media (min-width: @tablet-width) {
-  .pic-list {
+  @media (min-width: @tablet-width) {
     width: 648px;
-    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
-
-    margin-bottom: 58px;
   }
-}
 
-@media (min-width: @desctop-width) {
-  .pic-list {
+  @media (min-width: @desctop-width) {
     width: @desctop-width;
   }
 }
