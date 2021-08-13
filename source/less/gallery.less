@@ -1,11 +1,17 @@
 .gallery {
-  margin: 31px auto 32px auto;
+  //margin: 31px auto 32px auto;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-gap: 22px;
+
 
   @media (min-width: @tablet-width) {
-    margin: 60px auto 52px auto;
+    //margin: 60px auto 52px auto;
+    grid-gap: 59px;
   }
 
   @media (min-width: @desctop-width) {
-    margin: 102px auto 63px auto;
+   // margin: 102px auto 63px auto;
+   grid-gap: 67px;
   }
 }
