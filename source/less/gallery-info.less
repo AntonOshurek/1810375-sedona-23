@@ -1,12 +1,14 @@
 .gallery-info {
-  padding: 0 20px 20px 20px;
+  padding: 0 10px 20px 10px;
   border-bottom: 2px solid @btn-disabled-color;
-}
 
-@media (min-width: @tablet-width) {
-  .gallery-info {
-    padding: 0 20px 65px 20px;
+  @media (min-width: @tablet-width) {
+    padding: 10px 20px 10px 20px;
     border-bottom: none;
+  }
+
+  @media (min-width: @desctop-width) {
+   padding: 0 20px 0 20px;
   }
 }
 
@@ -15,9 +17,14 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   padding: 0 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .gallery-info__text {

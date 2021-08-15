@@ -1,26 +1,34 @@
 .footer {
   height: min-content;
   padding: 38px 0 26px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: min-content;
+
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  align-self: center;
+
+  &--container {
+   margin: 0 auto;
+   max-width: @desctop-width;
+  }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: auto;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 1fr;
     padding: 36px 60px 36px 45px;
   }
 
   @media (min-width: @desctop-width) {
-      padding: 36px 120px 36px 109px;
+    padding: 36px 120px 36px 109px;
   }
 }
 
 .footer__hash {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -29,16 +37,15 @@
   line-height: 26px;
   color: @standart-black;
   cursor: pointer;
-  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    text-align: left;
   }
 }
 
 .footer__link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -47,6 +54,10 @@
   line-height: 26px;
   color: @standart-black;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 
   &:hover path{
     fill: @brand-color;

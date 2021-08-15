@@ -9,10 +9,13 @@
 .body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: @standart-white;
     font-family: 'PT Sans', sans-serif;
     color: @standart-black;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -28,9 +31,10 @@
     padding: 0;
 }
 
-@media (min-width: @desctop-width) {
-  .container {
-    margin: 0 auto;
+.container {
+  margin: 0 auto;
+
+  @media (min-width: @desctop-width) {
     max-width: @desctop-width;
   }
 }

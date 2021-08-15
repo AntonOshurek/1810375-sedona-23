@@ -1,0 +1,14 @@
+.gallery {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-gap: 22px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-gap: 59px;
+  }
+
+  @media (min-width: @desctop-width) {
+   grid-gap: 67px;
+  }
+}

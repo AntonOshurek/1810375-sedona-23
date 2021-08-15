@@ -4,11 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 40px;
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .socials-list__elem:not(:last-child) {
@@ -28,16 +23,14 @@
   align-items: center;
   justify-content: center;
 
-      &:hover,
-      &:focus{
-          background-color: @brand-color-hover;
-      }
+  &:hover,
+  &:focus{
+      background-color: @brand-color-hover;
+  }
 
-      &:active {
-          background-color: @brand-color-click;
-
-          .socials-list__img-path {
-            fill: darken(#fff, 15%);
-          }
-      }
+  &:active,
+  &:active path {
+    background-color: @brand-color-click;
+    fill: darken(#fff, 15%);
+  }
 }
