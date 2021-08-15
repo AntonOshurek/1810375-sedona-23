@@ -1,6 +1,30 @@
 .forms-title {
-  padding: 36px 8px 16px 8px;
+  padding: 0 10px 16px 10px;
   border-bottom: 2px solid @btn-disabled-color;
+
+  &--wrap {
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    width: 316px;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding: 0 10px 0px 10px;
+    &--wrap {
+      width: auto;
+      margin-top: 70px;
+      margin-bottom: 66px;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    &--wrap {
+      margin-top: 114px;
+      margin-bottom: 56px;
+    }
+  }
 }
 
 .forms-title__text {
@@ -20,17 +44,4 @@
   font-size: 14px;
   line-height: 24px;
   color: @subtitle-text-color;
-}
-
-@media (min-width: @tablet-width) {
-  .forms-title {
-    padding: 70px 166px 66px 166px;
-    border-bottom: none;
-  }
-}
-
-@media (min-width: @desctop-width) {
-  .forms-title {
-    padding: 114px 382px 56px 382px;
-  }
 }
