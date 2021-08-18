@@ -1,28 +1,28 @@
 .picture-elem {
-  //border-bottom: 2px solid @btn-disabled-color;
+  border-bottom: 2px solid @btn-disabled-color;
   display: flex;
   flex-direction: column-reverse;
-  padding: 20px 0;
-  width: 280px;
-  margin: 0 auto;
   position: relative;
 
-  @media (min-width: @tablet-width) {
-    .default-margin-padd();
-    width: auto;
+  @media (max-width: @tablet-width) {
+    padding: 20px 0;
   }
 }
 
 .picture-elem__info {
   padding-top: 10px;
   align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background-color: @input-bg;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: @desctop-width) {
@@ -37,6 +37,10 @@
 
 .picture-elem__picture {
   display: flex;
+
+  @media (max-width: @tablet-width) {
+    margin: 0 auto
+  }
 }
 
 .picture-elem__title {
@@ -57,8 +61,7 @@
 .picture-elem__like-btn {
   .default-margin-padd();
   display: flex;
-  align-items: baseline;
-  margin-top: 10px;
+  align-items: center;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
@@ -66,13 +69,14 @@
   font-size: 14px;
   line-height: 24px;
 
-  @media (min-width: @tablet-width) {
-    margin-top: 0px;
+  @media (max-width: @tablet-width) {
+    margin-top: 10px;
   }
 }
 
 .picture-elem__like-icon {
   margin-right: 10px;
+  margin-bottom: 6px;
 
   @media (min-width: @desctop-width) {
     & > path {
