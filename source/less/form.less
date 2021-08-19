@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
   grid-gap: 20px;
-  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -18,12 +17,11 @@
 }
 
 /*standart style for all fieldset blocks*/
-
 .form__item {
   border: none;
-  padding: 0 8px 25px 8px;
+  padding: 0 20px 25px 20px;
   margin: 0 auto;
-  width: 319px;
+  width: 320px;
   position: relative;
 
   &:nth-child(-n+4)::before {
@@ -32,8 +30,8 @@
     bottom: 0;
     width: 100vw;
     margin-left: calc((320px - 100vw) / 2);
-    height: 2px;
-    background-color: tomato;
+    height: 1px;
+    background-color: @btn-disabled-color;
   }
 
   @media (min-width: @tablet-width) {
@@ -142,7 +140,7 @@
     padding-top: 50px;
     position: relative;
 
-    &::before {
+    &::after {
       content: '';
       position: absolute;
       right: 0;
@@ -151,7 +149,6 @@
       height: 100%;
       width: 1px;
       background-color: @form-border-color;
-
       @media (min-width: @desctop-width) {
         right: -150px;
       }
