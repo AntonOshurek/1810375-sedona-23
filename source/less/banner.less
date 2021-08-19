@@ -13,17 +13,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    top: 0px;
+    top: -2px;
     left: 0;
     width: 100%;
     height: 80px;
   }
 
   @media(min-width: @tablet-width) {
-    flex-direction: row;
+    &--main {
+      flex-direction: row;
 
-    &--main::before {
-      display: none;
+      &::before {
+        display: none;
+      }
     }
 
     &--medium {
@@ -38,6 +40,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 400px;
+  }
 
   &--main {
     padding: 82px 13px 39px 13px;
@@ -94,8 +100,12 @@
 }
 
 .banner__img {
-  object-fit: cover;
   display: flex;
-  height: 260px;
+  object-fit: cover;
+  width: 100%;
+  min-height: 260px;
+}
+
+.foo { // ???
   width: 100%;
 }
