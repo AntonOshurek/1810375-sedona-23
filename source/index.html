@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" display="swap">
-    <!--font-family: 'PT Sans', sans-serif;-->
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" display="swap">
+  <!--font-family: 'PT Sans', sans-serif;-->
 
-    <link rel="stylesheet" href="css/style.css">
+  <!--FAVICON-->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-    <title>SEDONA</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>SEDONA</title>
 </head>
 <body class="body">
 
@@ -23,7 +27,9 @@
         </div>
         <nav class="navigation">
             <div class="navigation__dropdown-wrap">
-                <button class="navigation__dropdown-btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              <button class="navigation__dropdown-btn" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             </div>
             <ul class="navigation__list navigation__list--active">
                 <li class="navigation__elem">
@@ -62,7 +68,15 @@
             <span class="banner__symbol">&horbar; &#8470; 1 &horbar;</span>
             <p class="banner__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
-            <img class="banner__img" width="100%" height="260px" src="img/photo-bridge@1x 1.jpg" alt="">
+            <picture>
+              <source srcset="img/banner/banner-city@1x.webp 1x,
+                              img/banner/banner-city@2x.webp 2x"
+                              type="image/webp">
+              <img class="banner__img" width="320px" height="260px"
+                src="img/banner/banner-city@1x.jpg 1x"
+                srcset="img/banner/banner-city@2x.jpg 2x"
+                alt="кафетерий города Седона на фоне гор">
+            </picture>
         </section>
 
         <ul class="benefits benefits--city">
@@ -86,7 +100,15 @@
             <span class="banner__symbol">&horbar; &#8470; 2 &horbar;</span>
             <p class="banner__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="banner__img" width="100%" height="260px" src="img/photo-bridge@1x 1.jpg"  alt="">
+          <picture class="foo">
+            <source srcset="img/banner/banner-bridge@1x.webp 1x,
+                            img/banner/banner-bridge@2x.webp 2x"
+                            type="image/webp">
+              <img class="banner__img" width="320px" height="260px"
+                src="img/banner/banner-bridge@1x.jpg 1x"
+                srcset="img/banner/banner-bridge@2x.jpg 2x"
+                alt="кафетерий города Седона на фоне гор">
+          </picture>
         </section>
 
         <ul class="benefits benefits--canyon">
