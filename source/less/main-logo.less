@@ -6,6 +6,14 @@
   background-position: center, bottom;
   background-size: cover, contain;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--second-page {
+    align-items: center;
+    justify-content: center;
+  }
 
   &::after {
     content: '';
@@ -27,5 +35,85 @@
 
   @media (min-width: @tablet-width) {
     height: 518px;
+  }
+}
+
+.main-logo__welcome-wrap {
+  margin-top: 90px;
+  margin-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.main-logo__welcome {
+  @media (min-width: @tablet-width) {
+    width: 188px;
+    height: 45px;
+  }
+}
+
+.main-logo__subwelcome-wrap {
+  margin-bottom: 31px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 1px;
+    background-color: #766458;
+    left: -25px;
+    //top: 6px;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 1px;
+    background-color: #766458;
+    right: -25px;
+    //top:6px;
+  }
+}
+
+.main-logo__subwelcome {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 28px;
+  }
+}
+
+.main-logo__sedona-wrap {
+  margin-bottom: 36px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.main-logo__sedona {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 80px;
+
+    &--second-page {
+      width: 457px;
+      height: 78px;
+    }
+  }
+}
+
+.main-logo__sublogo {
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    height: 74px;
   }
 }
