@@ -1,5 +1,5 @@
 .gallery-info {
-  padding: 0 10px 20px 0;
+  padding: 0 10px 20px 10px;
   border-bottom: 2px solid @btn-disabled-color;
 
   @media (min-width: @tablet-width) {
@@ -30,4 +30,12 @@
   font-size: 14px;
   line-height: 24px;
   color: @subtitle-text-color;
+
+  &--br {
+    display: none;
+
+    @media (min-width: 464px) {
+      display: block;
+    }
+  }
 }
