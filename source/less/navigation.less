@@ -1,6 +1,10 @@
 .navigation {
   position: relative;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    z-index: 0;
+  }
 }
 
 .navigation__dropdown-wrap {
@@ -69,7 +73,7 @@
       color: @standart-black;
     }
 
-    &::after {
+    &::before {
       content: '';
       grid-row: 1;
       grid-column-start: 3;

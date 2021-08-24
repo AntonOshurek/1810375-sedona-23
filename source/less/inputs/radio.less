@@ -7,10 +7,41 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
+
+  &:hover .radio__custom-check,
+  &:focus .radio__custom-check{
+    background-color: @btn-disabled-color;
+  }
 }
 
 .radio__buton {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:disabled ~ .radio__custom-check {
+    background-color: @input-click;
+  }
+
+  &:checked ~ .radio__custom-check::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: @subtitle-text-color;
+  }
+}
+
+.radio__custom-check {
   width: 48px;
   height: 48px;
-  margin-right: 26px;
+  margin-right: 23px;
+  background-color: @input-bg;
+  border-radius: 50%;
+  position: relative;
 }

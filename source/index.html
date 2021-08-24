@@ -23,7 +23,7 @@
 
     <header class="header container">
         <div class="header-logo">
-            <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+          <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
         </div>
         <nav class="navigation">
             <div class="navigation__dropdown-wrap">
@@ -51,9 +51,18 @@
     <main class="main container">
         <section class="main-logo">
           <h1 class="visually-hidden">Седона</h1>
-          <div class="main-logo__welcome"></div>
-          <div class="main-logo__sedona"></div>
-          <div class="main-logo__info"></div>
+          <div class="main-logo__welcome-wrap">
+            <img class="main-logo__welcome" src="img/main-logo/main-logo__welcome.svg" width="115" height="27" alt="">
+          </div>
+          <div class="main-logo__subwelcome-wrap">
+            <img class="main-logo__subwelcome" src="img/main-logo/main-logo__subwelcome.svg" width="106" height="17" alt="">
+          </div>
+          <div class="main-logo__sedona-wrap">
+            <img class="main-logo__sedona" src="img/main-logo/main-logo__sedona.svg" width="286" height="48" alt="">
+          </div>
+          <div class="main-logo__sublogo-wrap">
+            <img class="main-logo__sublogo" src="img/main-logo/main-logo__sublogo.svg" width="173" height="45" alt="">
+          </div>
         </section>
 
         <section class="main-slogan">
@@ -80,15 +89,15 @@
         </section>
 
         <ul class="benefits benefits--city">
-          <li class="benefits__item benefits__item--city">
-            <h4 class="benefits__title benefits__title--city benefits__title--home">Жилье</h4>
+          <li class="benefits__item benefits__item--city benefits__item--home">
+            <h4 class="benefits__title benefits__title--city benefits__title-home">Жилье</h4>
             <p class="benefits__text benefits__text--city">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="benefits__item benefits__item--city">
+          <li class="benefits__item benefits__item--city benefits__item--city-food">
             <h4 class="benefits__title benefits__title--city">ЕДА</h4>
             <p class="benefits__text benefits__text--city">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
           </li>
-          <li class="benefits__item benefits__item--city">
+          <li class="benefits__item benefits__item--city benefits__item--city-present">
             <h4 class="benefits__title benefits__title--city">СУВЕНИРЫ</h4>
             <p class="benefits__text benefits__text--city">Не только китайского, но и местного производства!</p>
           </li>
@@ -164,7 +173,9 @@
         </li>
       </ul>
       <a class="footer__link" href="#">Разработано
-        <svg class="footer__link-img" aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/></svg>
+        <svg class="footer__link-img" aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/>
+        </svg>
       </a>
     </footer>
     <script src="js/script.js"></script>
