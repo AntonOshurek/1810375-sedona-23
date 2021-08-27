@@ -1,17 +1,28 @@
 @font-face {
-    font-family: ptsans;
-    src: local("Font"),
-    local("My Font"),
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  font-family: ptsans;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ptsans;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
 }
 
 .body {
-    margin: 0;
-    padding: 0;
-    background-color: @standart-white;
-    font-family: 'PT Sans', sans-serif;
-    color: @standart-black;
+  margin: 0;
+  padding: 0;
+  background-color: @standart-white;
+  //font-family: 'PT Sans', sans-serif;
+  font-family: ptsans, sans-serif;
+  color: @standart-black;
 }
 
 * {
@@ -19,16 +30,16 @@
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .default-margin-padd() {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
