@@ -105,21 +105,11 @@ const reload = (done) => {
   done();
 }
 
-// Watcher
-//const watcher = () => {
-  //gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  //gulp.watch("source/*.html").on("change", sync.reload);
-//}
-
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(script));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
-
-/*exports.default = gulp.series(
-  html, script, copyImages, styles, server, watcher
-);*/
 
 // Build
 const build = gulp.series(
