@@ -1,0 +1,133 @@
+.form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &--error {
+    display: none;
+  }
+
+  &--success {
+    display: none;
+  }
+}
+
+.modal-open {
+  display: block;
+}
+
+.form-modal--wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(222, 222,222, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.form-modal__content {
+  z-index: 1;
+  max-width: 320px;
+  height: min-content;
+  background-color: @standart-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--error {
+    padding: 40px 41px 31px 41px;
+    @media (min-width: @tablet-width) {
+      max-width: 400px;
+      padding: 35px 47px 49px 47px;
+    }
+  }
+
+  &--success {
+    padding: 38px 0 0 0;
+    @media (min-width: @tablet-width) {
+      max-width: 640px;
+    }
+  }
+}
+
+.form-modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0;
+  color: @standart-black;
+  margin: 0 0 22px 0;
+
+  &--success {
+    margin: 0 38px 22px 38px;
+    @media (min-width: @tablet-width) {
+      margin: 0 98px 31px 98px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.form-modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  color: @subtitle-text-color;
+  margin: 0 0 22px 0;
+
+  &--success {
+    margin: 0 38px 22px 38px;
+    @media (min-width: @tablet-width) {
+      margin: 0 98px 31px 98px;
+    }
+  }
+}
+
+.form-modal__btn-wrap {
+  padding: 20px;
+  width: 100%;
+  background-color: @input-bg;
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.form-modal__btn {
+  background-color: @brand-color;
+  margin: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @standart-white;
+  padding: 18px 0 14px 0;
+  text-transform: uppercase;
+
+  &--error {
+    width: 180px;
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
+
+  &--success {
+    width: 100%;
+  }
+}
