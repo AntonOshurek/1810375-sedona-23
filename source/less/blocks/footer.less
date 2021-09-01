@@ -1,22 +1,21 @@
 .footer {
   height: min-content;
   padding: 28px 0 26px 0;
-  width: min-content;
 
   display: grid;
-  grid-template-columns: min-content;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 40px;
   align-self: center;
 
   &--container {
-   margin: 0 auto;
-   max-width: @desctop-width;
+    margin: 0 auto;
+    max-width: @desctop-width;
   }
 
   @media (min-width: @tablet-width) {
     width: auto;
-    grid-template-columns: 1fr min-content 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 36px 60px 36px 45px;
   }
@@ -29,6 +28,15 @@
 .footer__hash {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__hash-link {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -37,9 +45,20 @@
   line-height: 26px;
   color: @standart-black;
   cursor: pointer;
-
   @media (min-width: @tablet-width) {
     text-align: left;
+  }
+}
+
+.footer__link-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -54,10 +73,7 @@
   line-height: 26px;
   color: @standart-black;
   cursor: pointer;
-
-  @media (min-width: @tablet-width) {
-    justify-content: flex-end;
-  }
+  margin-left: 8px; //for new elements
 
   &:hover path{
     fill: @brand-color;
