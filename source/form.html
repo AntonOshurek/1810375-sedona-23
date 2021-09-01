@@ -64,7 +64,7 @@
       </p>
     </section>
 
-    <form class="form container" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="form container" id="form" name="sedona-form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="form-impressions form__item">
         <legend class="form__title">Ваше Общее впечатление:</legend>
         <label class="radio">
@@ -104,12 +104,12 @@
         <legend class="form__title form__title--line">Контактная информация:</legend>
         <label class="standart-input standart-input--long">
           <span><span class="standart-input__hidden">Контактный</span> телефон*:</span>
-          <input class="standart-input__input standart-input__input--long" type="tel" required placeholder="Введите телефон">
+          <input class="standart-input__input standart-input__input--long" id="form-tel" type="tel"  placeholder="Введите телефон">
           <span class="standart-input__custom-elem standart-input__custom-elem--tel"></span>
         </label>
         <label class="standart-input standart-input--long">
           <span>Электронная почта*:</span>
-          <input class="standart-input__input standart-input__input--long" type="email" required placeholder="Введите e-mail">
+          <input class="standart-input__input standart-input__input--long" id="form-email" type="email"  placeholder="Введите e-mail">
           <span class="standart-input__custom-elem standart-input__custom-elem--email"></span>
         </label>
       </fieldset>
