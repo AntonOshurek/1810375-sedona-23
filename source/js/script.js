@@ -53,7 +53,6 @@ submitBtn.addEventListener('click', (e) => {
       name: firstName.value
     };
     formData.push(newUserData);
-    console.log(formData);
     openSuccessModal();
   }
 })
