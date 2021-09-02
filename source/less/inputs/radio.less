@@ -9,15 +9,13 @@
   align-items: center;
 
   &:hover .radio__custom-check,
-  &:focus .radio__custom-check{
+  &:focus .radio__custom-check {
     background-color: @btn-disabled-color;
   }
 }
 
 .radio__buton {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 
   &:disabled ~ .radio__custom-check {
@@ -25,7 +23,7 @@
   }
 
   &:checked ~ .radio__custom-check::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;

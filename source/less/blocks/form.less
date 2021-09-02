@@ -25,7 +25,7 @@
   position: relative;
 
   &:nth-child(-n+4)::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -59,7 +59,7 @@
 
     &--line::before,
     &--line::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 123px;
       height: 1px;
@@ -71,12 +71,12 @@
     }
 
     &--line::before {
-      left: 0px;
+      left: 0;
       top: 50%;
     }
 
     &--line::after {
-      right: 0px;
+      right: 0;
       top: 50%;
     }
   }
@@ -142,7 +142,7 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       top: 0;
@@ -150,6 +150,7 @@
       height: 100%;
       width: 1px;
       background-color: @form-border-color;
+
       @media (min-width: @desctop-width) {
         right: -150px;
       }

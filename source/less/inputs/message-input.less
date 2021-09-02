@@ -1,14 +1,13 @@
 .message-input {
   box-sizing: border-box;
   display: block;
-  border: none;
   background-color: @input-bg;
   padding: 14px 22px 10px 22px;
   border: 4px solid transparent;
   width: 279px;
   height: 160px;
   resize: none;
-  font-family: ptsans, sans-serif;
+  font-family: "ptsans", sans-serif;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -20,17 +19,18 @@
   }
 
   &::placeholder {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 26px;
-      color: @standart-black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: @standart-black;
   }
 
   &:hover {
-      background-color: @input-hover;
+    background-color: @input-hover;
   }
+
   &:focus {
-      background-color: transparent;
-      border: 4px solid @input-hover;
+    background-color: transparent;
+    border: 4px solid @input-hover;
   }
 }
