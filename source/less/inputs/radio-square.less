@@ -17,21 +17,19 @@
   }
 
   @media (min-width: @desctop-width) {
-      justify-content: center;
-      flex-grow: 1;
-      width: max-content;
+    justify-content: center;
+    flex-grow: 1;
+    width: max-content;
   }
 
   &:hover .radio-square__custom-check,
-  &:focus .radio-square__custom-check{
+  &:focus .radio-square__custom-check {
     background-color: @btn-disabled-color;
   }
 }
 
 .radio-square__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 
   &:disabled ~ .radio-square__custom-check {

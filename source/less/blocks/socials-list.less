@@ -14,7 +14,6 @@
 .socials-list__link {
   text-decoration: none;
   color: @standart-white;
-  display: block;
   width: 46px;
   height: 48px;
   background-color: @brand-color;
@@ -25,13 +24,13 @@
   justify-content: center;
 
   &:hover,
-  &:focus{
-      background-color: @brand-color-hover;
+  &:focus {
+    background-color: @brand-color-hover;
   }
 
   &:active,
   &:active path {
     background-color: @brand-color-click;
-    fill: darken(#fff, 15%);
+    fill: darken(@standart-white, 15%);
   }
 }
