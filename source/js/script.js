@@ -34,24 +34,43 @@ const modalBtn = document.querySelectorAll('.form-modal__btn');
 const submitBtn = document.querySelector('.form-submit__btn');
 
 //inputs
-
 const email = document.querySelector('#form-email');
 const telephone = document.querySelector('#form-tel');
-console.log(email.validateEmail);
+const firstName = document.querySelector('#name');
+
+const formData = [];
 
 submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  if(validateEmail(email.value) != true) {
+  if(!validateEmail(email.value) || !validateTel(telephone.value) || !validateName(firstName.value)) {
+    e.preventDefault();
     openErrorModal();
   }else {
+    e.preventDefault();
+
+    let newUserData = {
+      email: email.value,
+      tel: telephone.value,
+      name: firstName.value
+    };
+    formData.push(newUserData);
+    console.log(formData);
     openSuccessModal();
-    form.submit();
   }
 })
 
 function validateEmail(email) {
   const re = /^[a-z0-9_][a-z0-0\._-]*[a-z0-9_]*@([a-z0-9]+[a-z0-9_-]*[a-z0-9]+\.)+[a-z0-9]+$/i;
   return re.test(String(email).toLowerCase());
+}
+
+function validateTel(tel) {
+  const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+  return re.test(String(tel));
+}
+
+function validateName(name) {
+  const re = /^[a-zA-Z\-]+$/;
+  return re.test(String(name).toLowerCase());
 }
 
 function openErrorModal() {
@@ -83,4 +102,3 @@ function closeModal() {
     })
   })
 };
-
