@@ -29,7 +29,7 @@ const form = document.querySelector('#form');
 const body = document.querySelector('.body');
 const modalError = document.querySelector('.form-modal--error');
 const modalSuccess = document.querySelector('.form-modal--success');
-const modalBg = document.querySelectorAll('.modal__bg');
+const modalBg = document.querySelectorAll('.form-modal__bg');
 const modalBtn = document.querySelectorAll('.form-modal__btn');
 const submitBtn = document.querySelector('.form-submit__btn');
 
