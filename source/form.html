@@ -24,8 +24,8 @@
 <body class="body">
   <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
   <header class="header container">
-    <a href="index.html" class="header-logo">
-      <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+    <a href="index.html" class="header__link">
+      <img class="header__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
     </a>
     <nav class="navigation">
       <div class="navigation__dropdown-wrap">
@@ -65,7 +65,7 @@
     </section>
 
     <form class="form container" id="form" name="sedona-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="form-impressions form__item">
+      <fieldset class="form__impressions form__item">
         <legend class="form__title">Ваше Общее впечатление:</legend>
         <label class="radio">
           Скорее положительное
@@ -84,7 +84,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="form-named form__item">
+      <fieldset class="form__named form__item">
         <legend class="form__title">Представьтесь:</legend>
         <label class="standart-input standart-input--name">
           ИМЯ*:
@@ -100,7 +100,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="form-contact form__item">
+      <fieldset class="form__contact form__item">
         <legend class="form__title form__title--line">Контактная информация:</legend>
         <label class="standart-input standart-input--long">
           <span><span class="standart-input__hidden">Контактный</span> телефон*:</span>
@@ -114,7 +114,7 @@
         </label>
       </fieldset>
 
-    <fieldset class="form-visited form__item">
+    <fieldset class="form__visited form__item">
       <legend class="form__title form__title--line">посещенные <br>достопримечательности:</legend>
       <label class="radio-square">
         Мост Дьявола
@@ -138,7 +138,7 @@
       </label>
     </fieldset>
 
-    <fieldset class="form-message form__item">
+    <fieldset class="form__message form__item">
       <legend class="form__title form__title--line">Опишите свои эмоции:</legend>
       <textarea class="message-input" name="messege" placeholder="Опишите подробно все свои восторги"></textarea>
     </fieldset>
@@ -176,8 +176,8 @@
     </a>
   </footer>
   <div class="form-modal form-modal--error">
-    <div class="form-modal--wrap">
-    <div class="modal__bg"></div>
+    <div class="form-modal__wrap">
+    <div class="form-modal__bg"></div>
     <div class="form-modal__content form-modal__content--error">
       <p class="form-modal__title form-modal__title--error">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
       <p class="form-modal__text form-modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -186,8 +186,8 @@
   </div>
   </div>
   <div class="form-modal form-modal--success">
-    <div class="form-modal--wrap">
-      <div class="modal__bg"></div>
+    <div class="form-modal__wrap">
+      <div class="form-modal__bg"></div>
       <div class="form-modal__content form-modal__content--success">
         <p class="form-modal__title form-modal__title--success">Ваш отзыв отправлен!</p>
         <p class="form-modal__text form-modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
