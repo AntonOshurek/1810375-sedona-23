@@ -18,6 +18,10 @@
   position: absolute;
   appearance: none;
 
+  &:focus ~ .radio__custom-check {
+    background-color: @btn-disabled-color;
+  }
+
   &:disabled ~ .radio__custom-check {
     background-color: @input-click;
   }
@@ -32,6 +36,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: @subtitle-text-color;
+    opacity: 0.3;
   }
 }
 

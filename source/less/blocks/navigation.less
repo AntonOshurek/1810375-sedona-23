@@ -123,13 +123,23 @@
   text-align: center;
   display: grid;
   align-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+
+  &:hover {
+    background: @brand-color-hover;
+  }
 
   &:active {
+    background: @brand-color-click;
     opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
     color: @standart-black;
+    font-size: 14px;
+    line-height: 26px;
 
     &:hover,
     &:focus {
