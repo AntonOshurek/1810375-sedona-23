@@ -75,10 +75,22 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   color: @standart-white;
   padding-bottom: 20px;
+
+  &--br {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+
+    &--br {
+      display: block;
+    }
+  }
 }
 
 .banner__symbol {
