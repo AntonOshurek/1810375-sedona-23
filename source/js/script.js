@@ -23,8 +23,8 @@ closeMenu();
   }
 
 //hidden map image
-const mapLink = document.querySelector('.map__link');
-mapLink.classList.add('map__link--hidden');
+//const mapLink = document.querySelector('.map__link');
+//mapLink.classList.add('map__link--hidden');
 
 //form modals
 const form = document.querySelector('#form');

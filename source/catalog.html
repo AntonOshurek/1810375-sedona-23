@@ -168,9 +168,19 @@
             <p class="video-player__title">Все еще сомневаетесь?</p>
             <p class="video-player__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
           </div>
-          <figure class="video-player__video-block">
-            <iframe class="video-player__video" width="300" height="201" src="https://www.youtube.com/embed/geud6LvqH7Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <figcaption class="visually-hidden">Видео...</figcaption>
+          <figure class="player">
+              <video class="player__video" width="400" height="" src="video.MP4" poster="img/video/video-prev.jpg"></video>
+              <div class="player__controls">
+                <button class="player__replay video-btn"></button>
+                <div class="player__status-wrap">
+                  <input class="player__status-bar custom-video-range" type="range" min="0" max="100">
+                </div>
+                <div>
+                  <button class="player__subtitles video-btn"></button>
+                  <button class="player__full-screen video-btn"></button>
+                </div>
+              </div>
+            <figcaption class="visually-hidden">Видео о Седоне!</figcaption>
           </figure>
         </section>
     </main>
