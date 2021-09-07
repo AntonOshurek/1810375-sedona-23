@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
   grid-gap: 20px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -53,9 +54,17 @@
   text-transform: uppercase;
   position: relative;
 
+  &--visited {
+    margin-bottom: 21px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 26px;
+
+    &--visited {
+      margin-bottom: 0;
+    }
 
     &--line::before,
     &--line::after {
@@ -160,9 +169,13 @@
 
 .form__visited {
   order: 4;
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 30px;
+  grid-row-gap: 30px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -170,6 +183,7 @@
     width: 100%;
 
     display: grid;
+    grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 44px;
@@ -183,6 +197,7 @@
   @media (min-width: @desctop-width) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 47px;

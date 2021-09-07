@@ -9,7 +9,11 @@
   align-items: center;
   justify-content: flex-end;
 
+  margin-bottom: 34px;
+
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
     &:nth-child(even) {
       justify-content: flex-start;
     }
@@ -20,6 +24,10 @@
     flex-grow: 1;
     width: max-content;
   }
+}
+
+.radio-square__text {
+  max-width: 160px;
 }
 
 .radio-square__input {
