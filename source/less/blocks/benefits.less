@@ -92,7 +92,6 @@
   flex-direction: column;
   align-items: center;
   text-align: left;
-  padding-bottom: 10px;
 
   &--city {
     padding-left: 50px;
@@ -104,6 +103,10 @@
       padding-left: 0;
       padding-top: 90px;
       align-items: center;
+
+      &:nth-child(n+5) {
+        margin-top: 20px;
+      }
     }
 
     @media (min-width: @desctop-width) {
@@ -116,6 +119,14 @@
 
     @media (min-width: @tablet-width) {
       margin-bottom: 0;
+    }
+  }
+
+  &--canyon {
+    @media (min-width: @tablet-width) {
+      &:nth-child(n+5) {
+        margin-top: 20px;
+      }
     }
   }
 

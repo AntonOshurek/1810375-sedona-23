@@ -1,7 +1,6 @@
 "use strict"
 
 //dropdown menu logick
-
 const menuBtn = document.querySelector('.navigation__dropdown-btn');
 const menuList = document.querySelector('.navigation__list');
 closeMenu();
@@ -23,8 +22,11 @@ closeMenu();
     menuList.classList.remove('navigation__list--active');
   }
 
-//form modals
+//hidden map image
+const mapLink = document.querySelector('.map__link');
+mapLink.classList.add('map__link--hidden');
 
+//form modals
 const form = document.querySelector('#form');
 const body = document.querySelector('.body');
 const modalError = document.querySelector('.form-modal--error');
