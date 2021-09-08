@@ -11,17 +11,15 @@
   }
 }
 
-.navigation__dropdown-wrap {
-  position: absolute;
-  top: 28px;
-  transform: translateY(-50%);
-  right: 20px;
-  padding: 5px;
-  z-index: 2;
-}
-
 /*nav btn*/
 .navigation__dropdown-btn {
+  position: absolute;
+  top: 23px;
+  transform: translateY(-50%);
+  left: calc(100% - 50px);
+  padding: 5px;
+  z-index: 2;
+
   background-color: transparent;
   border: none;
   margin: 0;
@@ -43,6 +41,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--nojs {
+    display: none;
   }
 
   @media (min-width: @tablet-width) {

@@ -8,6 +8,7 @@ closeMenu();
 
 menuList.classList.remove('navigation__list--nojs');
 navigation.classList.remove('navigation--nojs');
+menuBtn.classList.remove('navigation__dropdown-btn--nojs');
 
   menuBtn.addEventListener('click', (e) => {
     e.preventDefault();
