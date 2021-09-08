@@ -11,6 +11,7 @@ const htmlmin = require('gulp-htmlmin'),
       rename = require('gulp-rename'),
       terser = require('gulp-terser'),
       squoosh = require('gulp-libsquoosh'),
+      webp = require("gulp-webp"),
       del = require('del');
 
 // Styles
@@ -62,6 +63,14 @@ const copyImages = () => {
   .pipe(gulp.dest('build/img'))
 }
 exports.copyImages = copyImages;
+
+// WebP
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
+}
+exports.createWebp = createWebp;
 
 // Copy
 const copy = (done) => {
@@ -119,6 +128,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    createWebp,
     script,
   ),
 );
@@ -132,6 +142,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    createWebp,
     script,
   ),
   gulp.series(
