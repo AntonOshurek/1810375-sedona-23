@@ -3,7 +3,11 @@
 //dropdown menu logick
 const menuBtn = document.querySelector('.navigation__dropdown-btn');
 const menuList = document.querySelector('.navigation__list');
+const navigation = document.querySelector('.navigation');
 closeMenu();
+
+menuList.classList.remove('navigation__list--nojs');
+navigation.classList.remove('navigation--nojs');
 
   menuBtn.addEventListener('click', (e) => {
     e.preventDefault();

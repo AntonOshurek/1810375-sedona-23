@@ -2,6 +2,10 @@
   position: relative;
   z-index: 1;
 
+  &--nojs {
+    z-index: 0;
+  }
+
   @media (min-width: @tablet-width) {
     z-index: 0;
   }
@@ -13,6 +17,7 @@
   transform: translateY(-50%);
   right: 20px;
   padding: 5px;
+  z-index: 2;
 }
 
 /*nav btn*/
@@ -57,9 +62,20 @@
   text-transform: uppercase;
 
   &--active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
     background-color: @brand-color;
     color: @standart-white;
     display: block;
+  }
+
+  &--nojs {
+    background-color: @brand-color;
+    color: @standart-white;
+    display: block;
+    padding-top: 70px;
   }
 
   @media (min-width: @tablet-width) {
