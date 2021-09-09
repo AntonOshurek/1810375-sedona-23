@@ -13,23 +13,21 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-<link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
 <title>Sedona catalog</title>
 </head>
 <body class="body">
   <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
   <header class="header container">
-    <a href="index.html" class="header-logo">
-      <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+    <a class="header__link" href="index.html">
+      <img class="header__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
     </a>
-    <nav class="navigation">
-      <div class="navigation__dropdown-wrap">
-        <button class="navigation__dropdown-btn" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <ul class="navigation__list navigation__list--active">
+    <nav class="navigation navigation--nojs">
+      <button class="navigation__dropdown-btn navigation__dropdown-btn--nojs" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="navigation__list navigation__list--nojs">
         <li class="navigation__elem">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
@@ -65,7 +63,7 @@
                     <p class="picture-elem__author">Автор фото: Борис</p>
                   </div>
                   <div>
-                    <button class="picture-elem__like-btn">
+                    <button class="picture-elem__like-btn" aria-label="Like">
                       <svg class="picture-elem__like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z" fill="#000"/></svg>
                       1350
                     </button>
@@ -73,14 +71,21 @@
                 </div>
                 <a href="#">
                   <picture>
-                    <source srcset="img/catalog/catalog-photo__1@1x.webp 1x,
-                                    img/catalog/catalog-photo__1@2x.webp 2x"
-                                    type="image/webp">
-                      <img class="picture-elem__picture picture-elem__picture--main"
-                        width="280" height="280"
-                          src="img/catalog/catalog-photo__1@1x.jpg"
-                          srcset="img/catalog/catalog-photo__1@2x.jpg 2x"
-                        alt="дорога посреди пустыни с закатом вдали">
+                    <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo__1-desktop@1x.webp,
+                                                                img/catalog/catalog-photo__1-desktop@2x.webp,
+                                                                img/catalog/catalog-photo__1-desktop@1x.jpg,
+                                                                img/catalog/catalog-photo__1-desktop@2x.jpg,">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo__1-tablet@1x.webp,
+                                                              img/catalog/catalog-photo__1-tablet@2x.webp,
+                                                              img/catalog/catalog-photo__1-tablet@1x.jpg,
+                                                              img/catalog/catalog-photo__1-tablet@2x.jpg,">
+                    <img class="picture-elem__picture picture-elem__picture--main"
+                      width="280" height="280"
+                        src="img/catalog/catalog-photo__1-mobile@1x.jpg"
+                        srcset="img/catalog/catalog-photo__1-mobile@1x.webp 1x,
+                                img/catalog/catalog-photo__1-mobile@2x.webp 2x,
+                                img/catalog/catalog-photo__1-mobile@2x.jpg 2x"
+                      alt="дорога посреди пустыни с закатом вдали">
                   </picture>
                 </a>
               </li>
@@ -91,22 +96,29 @@
                     <p class="picture-elem__author">Автор фото: Сергей</p>
                   </div>
                   <div>
-                    <button class="picture-elem__like-btn">
+                    <button class="picture-elem__like-btn" aria-label="Like">
                       <svg class="picture-elem__like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z" fill="#000"/></svg>
                       1350</button>
                   </div>
                 </div>
                 <a href="#">
                   <picture>
-                    <source srcset="img/catalog/catalog-photo__2@1x.webp 1x,
-                                    img/catalog/catalog-photo__2@2x.webp 2x"
-                                    type="image/webp">
-                        <img class="picture-elem__picture picture-elem__picture--second"
-                        width="280" height="280"
-                            src="img/catalog/catalog-photo__2@1x.jpg"
-                            srcset="img/catalog/catalog-photo__2@2x.jpg 2x"
-                        alt="дикий кактус на фоне горы">
-                    </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo__2-desktop@1x.webp,
+                                                                img/catalog/catalog-photo__2-desktop@2x.webp,
+                                                                img/catalog/catalog-photo__2-desktop@1x.jpg,
+                                                                img/catalog/catalog-photo__2-desktop@2x.jpg,">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo__2-tablet@1x.webp,
+                                                                img/catalog/catalog-photo__2-tablet@2x.webp,
+                                                                img/catalog/catalog-photo__2-tablet@1x.jpg,
+                                                                img/catalog/catalog-photo__2-tablet@2x.jpg,">
+                    <img class="picture-elem__picture picture-elem__picture--second"
+                    width="280" height="280"
+                        src="img/catalog/catalog-photo__2-mobile@1x.jpg"
+                        srcset="img/catalog/catalog-photo__2-mobile@1x.webp 1x,
+                                img/catalog/catalog-photo__2-mobile@2x.webp 2x,
+                                img/catalog/catalog-photo__2-mobile@2x.jpg 2x"
+                    alt="дикий кактус на фоне горы">
+                  </picture>
                 </a>
               </li>
               <li class="picture-elem picture-elem--second">
@@ -116,21 +128,28 @@
                     <p class="picture-elem__author">Автор фото: Петр</p>
                   </div>
                   <div>
-                    <button class="picture-elem__like-btn">
+                    <button class="picture-elem__like-btn" aria-label="Like">
                       <svg class="picture-elem__like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z" fill="#000"/></svg>
                       1350</button>
                   </div>
                 </div>
                 <a href="#">
                   <picture>
-                    <source srcset="img/catalog/catalog-photo__3@1x.webp 1x,
-                                    img/catalog/catalog-photo__3@2x.webp 2x"
-                                    type="image/webp">
-                      <img class="picture-elem__picture picture-elem__picture--second"
-                        width="280" height="280"
-                          src="img/catalog/catalog-photo__3@1x.jpg"
-                          srcset="img/catalog/catalog-photo__3@2x.jpg 2x"
-                        alt="извилистая дорога через лес которая проходит через холмы">
+                    <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo__3-desktop@1x.webp,
+                                                                img/catalog/catalog-photo__3-desktop@2x.webp,
+                                                                img/catalog/catalog-photo__3-desktop@1x.jpg,
+                                                                img/catalog/catalog-photo__3-desktop@2x.jpg,">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo__3-tablet@1x.webp,
+                                                                img/catalog/catalog-photo__3-tablet@2x.webp,
+                                                                img/catalog/catalog-photo__3-tablet@1x.jpg,
+                                                                img/catalog/catalog-photo__3-tablet@2x.jpg,">
+                    <img class="picture-elem__picture picture-elem__picture--third"
+                      width="280" height="280"
+                        src="img/catalog/catalog-photo__3-mobile@1x.jpg"
+                        srcset="img/catalog/catalog-photo__3-mobile@1x.webp 1x,
+                                img/catalog/catalog-photo__3-mobile@2x.webp 2x,
+                                img/catalog/catalog-photo__3-mobile@2x.jpg 2x"
+                      alt="извилистая дорога через лес которая проходит через холмы">
                   </picture>
                 </a>
               </li>
@@ -141,21 +160,28 @@
                     <p class="picture-elem__author">Автор фото: Антон</p>
                   </div>
                   <div>
-                    <button class="picture-elem__like-btn">
+                    <button class="picture-elem__like-btn" aria-label="Like">
                       <svg class="picture-elem__like-icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z" fill="#000"/></svg>
                       1350</button>
                   </div>
                 </div>
                 <a href="#">
                   <picture>
-                    <source srcset="img/catalog/catalog-photo__4@1x.webp 1x,
-                                    img/catalog/catalog-photo__4@2x.webp 2x"
-                                    type="image/webp">
-                      <img class="picture-elem__picture picture-elem__picture--second"
-                        width="280" height="280"
-                          src="img/catalog/catalog-photo__4@1x.jpg"
-                          srcset="img/catalog/catalog-photo__4@2x.jpg 2x"
-                        alt="глубокий каньён седоны">
+                    <source media="(min-width: 1200px)" srcset="img/catalog/catalog-photo__4-desktop@1x.webp,
+                                                                img/catalog/catalog-photo__4-desktop@2x.webp,
+                                                                img/catalog/catalog-photo__4-desktop@1x.jpg,
+                                                                img/catalog/catalog-photo__4-desktop@2x.jpg,">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-photo__4-tablet@1x.webp,
+                                                              img/catalog/catalog-photo__4-tablet@2x.webp,
+                                                              img/catalog/catalog-photo__4-tablet@1x.jpg,
+                                                              img/catalog/catalog-photo__4-tablet@2x.jpg,">
+                    <img class="picture-elem__picture picture-elem__picture--fourth"
+                      width="280" height="280"
+                        src="img/catalog/catalog-photo__4-mobile@1x.jpg"
+                        srcset="img/catalog/catalog-photo__4-mobile@1x.webp 1x,
+                                img/catalog/catalog-photo__4-mobile@2x.webp 2x,
+                                img/catalog/catalog-photo__4-mobile@2x.jpg 2x"
+                      alt="глубокий каньён седоны">
                   </picture>
                 </a>
               </li>
@@ -168,10 +194,19 @@
             <p class="video-player__title">Все еще сомневаетесь?</p>
             <p class="video-player__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
           </div>
-          <figure class="video-player__video-block">
-            <!--<video class="video-player__video" src="#"></video>-->
-            <iframe class="video-player__video" width="300" height="201" src="https://www.youtube.com/embed/geud6LvqH7Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <figcaption class="visually-hidden">Видео...</figcaption>
+          <figure class="player">
+              <video class="player__video" width="400" height="350" src="video.MP4" poster="img/video/video-prev.jpg"></video>
+              <div class="player__controls">
+                <button class="player__replay video-btn"></button>
+                <div class="player__status-wrap">
+                  <input class="player__status-bar custom-video-range" type="range" min="0" max="100">
+                </div>
+                <div>
+                  <button class="player__subtitles video-btn"></button>
+                  <button class="player__full-screen video-btn"></button>
+                </div>
+              </div>
+            <figcaption class="visually-hidden">Видео о Седоне!</figcaption>
           </figure>
         </section>
     </main>
@@ -183,23 +218,23 @@
     </div>
     <ul class="socials-list">
       <li class="socials-list__elem">
-        <a class="socials-list__link" href="#">
+        <a class="socials-list__link" href="#" aria-label="our twiter">
           <svg width="18" height="15" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3.17c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
         </a>
       </li>
       <li class="socials-list__elem">
-        <a class="socials-list__link" href="#">
+        <a class="socials-list__link" href="#" aria-label="our facebook">
           <svg width="9" height="19" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
         </a>
       </li>
       <li class="socials-list__elem">
-        <a class="socials-list__link" href="#">
+        <a class="socials-list__link" href="#" aria-label="our youtube">
           <svg width="20" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0zM7 10.4V3.6L13.8 7 7 10.4z" fill="#fff"/></svg>
         </a>
       </li>
     </ul>
-    <div class="footer__link-wrap">
-      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+    <div class="footer__link">
+      <a class="footer__link-elem" href="https://htmlacademy.ru/intensive/adaptive" aria-label="link to htmlacademy">Разработано
         <svg class="footer__link-img" aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/>
         </svg>

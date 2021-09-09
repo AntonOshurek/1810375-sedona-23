@@ -1,8 +1,34 @@
 .map {
   display: flex;
+  position: relative;
 }
 
 .map__iframe {
   width: 100%;
   height: 350px;
+}
+
+.map__link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+
+  background-image: url("../../img/map/map__link--img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../../img/map/map__link--img@2x.jpg");
+  }
+
+  &--hidden {
+    display: none;
+  }
 }

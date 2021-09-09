@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--FONTS-->
-  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" display="swap">-->
-  <!--font-family: 'PT Sans', sans-serif;-->
   <link rel="preload" href="fonts/ptsans.woff" as="font">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
 
@@ -23,168 +19,169 @@
 </head>
 <body class="body">
 
-    <header class="header container">
-        <div class="header-logo">
-          <img class="header-logo__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
-        </div>
-        <nav class="navigation">
-            <div class="navigation__dropdown-wrap">
-              <button class="navigation__dropdown-btn" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-            </div>
-            <ul class="navigation__list navigation__list--active">
-                <li class="navigation__elem">
-                  <a class="navigation__link navigation__link--current">Главная</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
-                </li>
-                <li class="navigation__elem">
-                  <a class="navigation__link" href="form.html">Форма Отзыва</a>
-                </li>
-                <li class="navigation__elem">
-                    <a class="navigation__link" href="#">HTML ACADEMY</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main container">
-        <section class="main-logo">
-          <h1 class="visually-hidden">Седона</h1>
-          <div class="main-logo__welcome-wrap">
-            <img class="main-logo__welcome" src="img/main-logo/main-logo__welcome.svg" width="115" height="27" alt="">
-          </div>
-          <div class="main-logo__subwelcome-wrap">
-            <img class="main-logo__subwelcome" src="img/main-logo/main-logo__subwelcome.svg" width="106" height="17" alt="">
-          </div>
-          <div class="main-logo__sedona-wrap">
-            <img class="main-logo__sedona" src="img/main-logo/main-logo__sedona.svg" width="286" height="48" alt="">
-          </div>
-          <div class="main-logo__sublogo-wrap">
-            <img class="main-logo__sublogo" src="img/main-logo/main-logo__sublogo.svg" width="173" height="45" alt="">
-          </div>
-        </section>
-
-        <section class="main-slogan">
-          <h2 class="visually-hidden">Приемущества отдыха в Седоне!</h2>
-          <p class="main-slogan__title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> Ззаслуживающий большего!</p>
-          <p class="main-slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
-
-        <section class="banner banner--main">
-          <div class="banner__lead banner__lead--main">
-            <h3 class="banner__title">НАСТОЯЩИЙ <br>ГОРОДОК</h3>
-            <span class="banner__symbol">&horbar; &#8470; 1 &horbar;</span>
-            <p class="banner__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          </div>
-            <picture>
-              <source srcset="img/banner/banner-city@1x.webp 1x,
-                              img/banner/banner-city@2x.webp 2x"
-                              type="image/webp">
-              <img class="banner__img" width="320" height="260"
-                src="img/banner/banner-city@1x.jpg"
-                srcset="img/banner/banner-city@2x.jpg 2x"
-                alt="кафетерий города Седона на фоне гор">
-            </picture>
-        </section>
-
-        <ul class="benefits benefits--city">
-          <li class="benefits__item benefits__item--city benefits__item--home">
-            <h4 class="benefits__title benefits__title--city benefits__title-home">Жилье</h4>
-            <p class="benefits__text benefits__text--city">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="benefits__item benefits__item--city benefits__item--city-food">
-            <h4 class="benefits__title benefits__title--city">ЕДА</h4>
-            <p class="benefits__text benefits__text--city">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
-          </li>
-          <li class="benefits__item benefits__item--city benefits__item--city-present">
-            <h4 class="benefits__title benefits__title--city">СУВЕНИРЫ</h4>
-            <p class="benefits__text benefits__text--city">Не только китайского, но и местного производства!</p>
-          </li>
+  <header class="header container">
+    <div class="header__link">
+      <img class="header__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+    </div>
+    <nav class="navigation navigation--nojs">
+        <button class="navigation__dropdown-btn navigation__dropdown-btn--nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list navigation__list--nojs">
+            <li class="navigation__elem">
+              <a class="navigation__link navigation__link--current">Главная</a>
+            </li>
+            <li class="navigation__elem">
+                <a class="navigation__link" href="catalog.html">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="navigation__elem">
+              <a class="navigation__link" href="form.html">Форма Отзыва</a>
+            </li>
+            <li class="navigation__elem">
+                <a class="navigation__link" href="#">HTML ACADEMY</a>
+            </li>
         </ul>
+    </nav>
+  </header>
 
-        <section class="banner banner--medium">
-          <div class="banner__lead banner__lead--medium">
-            <h3 class="banner__title">ТАМ ЕСТЬ Мост дьявола</h3>
-            <span class="banner__symbol">&horbar; &#8470; 2 &horbar;</span>
-            <p class="banner__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
+  <main class="main container">
+      <section class="main-logo">
+        <h1 class="visually-hidden">Седона</h1>
+        <div class="main-logo__welcome-wrap">
+          <img class="main-logo__welcome" src="img/main-logo/main-logo__welcome.svg" width="115" height="27" alt="">
+        </div>
+        <div class="main-logo__subwelcome-wrap">
+          <img class="main-logo__subwelcome" src="img/main-logo/main-logo__subwelcome.svg" width="106" height="17" alt="">
+        </div>
+        <div class="main-logo__sedona-wrap">
+          <img class="main-logo__sedona" src="img/main-logo/main-logo__sedona.svg" width="286" height="48" alt="">
+        </div>
+        <div class="main-logo__sublogo-wrap">
+          <img class="main-logo__sublogo" src="img/main-logo/main-logo__sublogo.svg" width="173" height="45" alt="">
+        </div>
+      </section>
+
+      <section class="main-slogan">
+        <h2 class="visually-hidden">Приемущества отдыха в Седоне!</h2>
+        <p class="main-slogan__title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br> Ззаслуживающий большего!</p>
+        <p class="main-slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <section class="banner banner--main">
+        <div class="banner__lead banner__lead--main">
+          <h3 class="banner__title">НАСТОЯЩИЙ&nbsp;<br class="banner__title--br">ГОРОДОК</h3>
+          <span class="banner__symbol">&horbar; &#8470; 1 &horbar;</span>
+          <p class="banner__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
           <picture>
-            <source srcset="img/banner/banner-bridge@1x.webp 1x,
-              img/banner/banner-bridge@2x.webp 2x"
-              type="image/webp">
-            <img class="banner__img" width="320" height="260"
-              src="img/banner/banner-bridge@1x.jpg"
-              srcset="img/banner/banner-bridge@2x.jpg 2x"
+            <source srcset="img/banner/banner-city@1x.webp 1x,
+                            img/banner/banner-city@2x.webp 2x"
+                            type="image/webp">
+            <img class="banner__img banner__img--city" width="320" height="260"
+              src="img/banner/banner-city@1x.jpg"
+              srcset="img/banner/banner-city@2x.jpg 2x"
               alt="кафетерий города Седона на фоне гор">
           </picture>
-        </section>
+      </section>
 
-        <ul class="benefits benefits--canyon">
-          <li class="benefits__item benefits__item--canyon">
-            <h3 class="benefits__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <span class="benefits__symbol">&horbar; &#8470; 3 &horbar;</span>
-            <p class="benefits__text">ВСЕ интересные места находятся очень близко</p>
-          </li>
-          <li class="benefits__item benefits__item--canyon">
-              <h3 class="benefits__title">КРАСИВАЯ ДОРОГА</h3>
-              <span class="benefits__symbol">&horbar; &#8470; 4 &horbar;</span>
-              <p class="benefits__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-          </li>
-          <li class="benefits__item benefits__item--canyon">
-              <h3 class="benefits__title">МАЛО ТУРИСТОВ</h3>
-              <span class="benefits__symbol">&horbar; &#8470; 5 &horbar;</span>
-              <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-
-        <section class="search-hotel">
-          <div class="search-hotel__wrap">
-              <p class="search-hotel__desc">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-              <p class="search-hotel__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-              <a class="search-hotel__title-link" href="#"><h2 class="search-hotel__title">НАЙТИ гостиницу</h2></a>
-          </div>
-        </section>
-
-        <section class="map">
-          <h2 class="visually-hidden">Где нас найти?</h2>
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1626986906413!5m2!1sru!2spl" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </main>
-
-    <footer class="footer footer--container">
-      <h2 class="visually-hidden">Наши контакты!</h2>
-      <div class="footer__hash">
-        <a class="footer__hash-link" href="#">#visitSEDONA</a>
-      </div>
-      <ul class="socials-list">
-        <li class="socials-list__elem">
-          <a class="socials-list__link" href="#">
-            <svg width="18" height="15" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.3.17c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
-          </a>
+      <ul class="benefits benefits--city">
+        <li class="benefits__item benefits__item--city benefits__item--home">
+          <h4 class="benefits__title benefits__title--city benefits__title-home">Жилье</h4>
+          <p class="benefits__text benefits__text--city">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="socials-list__elem">
-          <a class="socials-list__link" href="#">
-            <svg width="9" height="19" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
-          </a>
+        <li class="benefits__item benefits__item--city benefits__item--city-food">
+          <h4 class="benefits__title benefits__title--city">ЕДА</h4>
+          <p class="benefits__text benefits__text--city">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,Вы НЕ разочаруетесь!</p>
         </li>
-        <li class="socials-list__elem">
-          <a class="socials-list__link" href="#">
-            <svg width="20" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0zM7 10.4V3.6L13.8 7 7 10.4z" fill="#fff"/></svg>
-          </a>
+        <li class="benefits__item benefits__item--city benefits__item--city-present">
+          <h4 class="benefits__title benefits__title--city">СУВЕНИРЫ</h4>
+          <p class="benefits__text benefits__text--city">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
-      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+
+      <section class="banner banner--medium">
+        <div class="banner__lead banner__lead--medium">
+          <h3 class="banner__title">ТАМ ЕСТЬ&nbsp;<br class="banner__title--br">Мост дьявола</h3>
+          <span class="banner__symbol">&horbar; &#8470; 2 &horbar;</span>
+          <p class="banner__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <picture>
+          <source srcset="img/banner/banner-bridge@1x.webp 1x,
+            img/banner/banner-bridge@2x.webp 2x"
+            type="image/webp">
+          <img class="banner__img banner__img--bridge" width="320" height="260"
+            src="img/banner/banner-bridge@1x.jpg"
+            srcset="img/banner/banner-bridge@2x.jpg 2x"
+            alt="кафетерий города Седона на фоне гор">
+        </picture>
+      </section>
+
+      <ul class="benefits benefits--canyon">
+        <li class="benefits__item benefits__item--canyon">
+          <h3 class="benefits__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <span class="benefits__symbol">&horbar; &#8470; 3 &horbar;</span>
+          <p class="benefits__text">ВСЕ интересные места находятся очень близко</p>
+        </li>
+        <li class="benefits__item benefits__item--canyon">
+            <h3 class="benefits__title">КРАСИВАЯ ДОРОГА</h3>
+            <span class="benefits__symbol">&horbar; &#8470; 4 &horbar;</span>
+            <p class="benefits__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        </li>
+        <li class="benefits__item benefits__item--canyon">
+            <h3 class="benefits__title">МАЛО ТУРИСТОВ</h3>
+            <span class="benefits__symbol">&horbar; &#8470; 5 &horbar;</span>
+            <p class="benefits__text">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+
+      <section class="search-hotel">
+        <div class="search-hotel__wrap">
+            <p class="search-hotel__desc">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+            <p class="search-hotel__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="search-hotel__title-link" href="#"><h2 class="search-hotel__title">НАЙТИ гостиницу</h2></a>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Где нас найти?</h2>
+        <a class="map__link" aria-label="click for open google map" href="https://www.google.com/maps?ll=34.837199,-111.807692&z=12&t=m&hl=ru&gl=PL&mapclient=embed&q=%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336+%D0%A1%D0%A8%D0%90"></a>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1626986906413!5m2!1sru!2spl" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+  </main>
+
+  <footer class="footer footer--container">
+    <h2 class="visually-hidden">Наши контакты!</h2>
+    <div class="footer__hash">
+      <a class="footer__hash-link" href="#">#visitSEDONA</a>
+    </div>
+    <ul class="socials-list">
+      <li class="socials-list__elem">
+        <a class="socials-list__link" href="#" aria-label="our twiter">
+          <svg width="18" height="15" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.3.17c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4z" fill="#fff"/></svg>
+        </a>
+      </li>
+      <li class="socials-list__elem">
+        <a class="socials-list__link" href="#" aria-label="our facebook">
+          <svg width="9" height="19" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7z" fill="#fff"/></svg>
+        </a>
+      </li>
+      <li class="socials-list__elem">
+        <a class="socials-list__link" href="#" aria-label="our youtube">
+          <svg width="20" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0zM7 10.4V3.6L13.8 7 7 10.4z" fill="#fff"/></svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__link">
+      <a class="footer__link-elem" href="https://htmlacademy.ru/intensive/adaptive" aria-label="link to htmlacademy">Разработано
         <svg class="footer__link-img" aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="#000"/>
         </svg>
       </a>
-    </footer>
-    <script src="js/script.min.js"></script>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

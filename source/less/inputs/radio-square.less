@@ -1,7 +1,6 @@
 .radio-square {
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
   font-weight: bold;
   color: @standart-black;
 
@@ -10,7 +9,11 @@
   align-items: center;
   justify-content: flex-end;
 
+  margin-bottom: 34px;
+
   @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
     &:nth-child(even) {
       justify-content: flex-start;
     }
@@ -21,19 +24,23 @@
     flex-grow: 1;
     width: max-content;
   }
+}
 
-  &:hover .radio-square__custom-check,
-  &:focus .radio-square__custom-check {
-    background-color: @btn-disabled-color;
-  }
+.radio-square__text {
+  max-width: 160px;
 }
 
 .radio-square__input {
   position: absolute;
   appearance: none;
 
+  &:focus ~ .radio-square__custom-check {
+    background-color: @btn-disabled-color;
+  }
+
   &:disabled ~ .radio-square__custom-check {
     background-color: @input-click;
+    opacity: 0.3;
   }
 
   &:checked ~ .radio-square__custom-check {
