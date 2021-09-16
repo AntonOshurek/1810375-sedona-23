@@ -21,7 +21,7 @@
   <h1 class="visually-hidden">Галлерея красоты города Седона</h1>
   <header class="header container">
     <a class="header__link" href="index.html">
-      <img class="header__image" width="101" height="85" src="img/logo-sedona.svg" alt="SEDONA Logo">
+      <img class="header__image" width="101" height="85" src="img/logo-sedona--mobile.svg" alt="SEDONA Logo">
     </a>
     <nav class="navigation navigation--nojs">
       <button class="navigation__dropdown-btn navigation__dropdown-btn--nojs" type="button">
@@ -197,13 +197,13 @@
           <figure class="player">
               <video class="player__video" width="400" height="350" src="video.MP4" poster="img/video/video-prev.jpg"></video>
               <div class="player__controls">
-                <button class="player__replay video-btn"></button>
+                <button class="player__replay video-btn"><span class="visually-hidden">replay</span></button>
                 <div class="player__status-wrap">
-                  <input class="player__status-bar custom-video-range" type="range" min="0" max="100">
+                  <input class="player__status-bar custom-video-range" type="range" min="0" max="100" aria-label="video control">
                 </div>
                 <div>
-                  <button class="player__subtitles video-btn"></button>
-                  <button class="player__full-screen video-btn"></button>
+                  <button class="player__subtitles video-btn"><span class="visually-hidden">on subtitles</span></button>
+                  <button class="player__full-screen video-btn"><span class="visually-hidden">to full screen</span></button>
                 </div>
               </div>
             <figcaption class="visually-hidden">Видео о Седоне!</figcaption>
