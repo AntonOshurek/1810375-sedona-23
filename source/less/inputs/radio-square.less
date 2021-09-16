@@ -9,7 +9,9 @@
   align-items: center;
   justify-content: flex-end;
 
-  margin-bottom: 34px;
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
