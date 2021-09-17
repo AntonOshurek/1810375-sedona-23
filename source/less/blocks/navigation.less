@@ -115,18 +115,15 @@
     display: flex;
     justify-content: flex-start;
     box-shadow: none;
-
-    &:hover {
-      background-color: transparent;
-    }
-
-    &:active {
-      background-color: transparent;
-    }
+    background-color: transparent;
 
     &:nth-child(4n+3),
     &:nth-child(4n+4) {
       justify-content: flex-end;
+    }
+
+    &:active {
+      background-color: transparent;
     }
   }
 }
@@ -159,10 +156,12 @@
 
     &:hover,
     &:focus {
+      background-color: transparent;
       color: @brand-color;
     }
 
     &:active {
+      background-color: transparent;
       color: @standart-black;
       opacity: 0.3;
     }
