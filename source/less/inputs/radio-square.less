@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: flex-end;
 
+  &:hover .radio-square__custom-check,
+  &:focus .radio-square__custom-check {
+    background-color: @btn-disabled-color;
+  }
+
   &:not(:last-child) {
     margin-bottom: 34px;
   }
@@ -42,7 +47,6 @@
 
   &:disabled ~ .radio-square__custom-check {
     background-color: @input-click;
-    opacity: 0.3;
   }
 
   &:checked ~ .radio-square__custom-check {
