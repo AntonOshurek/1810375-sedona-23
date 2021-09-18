@@ -3,6 +3,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @subtitle-text-color;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   &--name {
     display: flex;
@@ -49,6 +50,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   &--name {
     flex-grow: 1;
@@ -61,7 +63,7 @@
   }
 
   &--long {
-    width: 232px;
+    width: 100%;
     grid-row: 2 \ -3;
 
     @media (min-width: @tablet-width) {
@@ -81,6 +83,20 @@
     line-height: 26px;
     color: @standart-black;
     opacity: 1;
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+
+  &::-webkit-input-placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+  &::-moz-placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+  &:-ms-input-placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+  }
+  &:-moz-placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
   }
 
   &:hover {
@@ -90,6 +106,11 @@
   &:focus {
     background-color: transparent;
     border: 4px solid @btn-disabled-color;
+  }
+
+  &:disabled,
+  &:disabled ~ .standart-input__custom-elem {
+    background-color: @input-click;
   }
 }
 
